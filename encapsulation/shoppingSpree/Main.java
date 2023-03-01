@@ -26,12 +26,12 @@ public class Main {
                 if (person.getName().equals(nameCommand)) {
                     for (Product product : productList) {
                         if (product.getName().equals(productCommand)) {
-                           // try {
+                            try {
                                 person.buyProduct(product);
 
-                           // } catch(Exception e) {
-                            //    System.out.println(person.getName() + " can't afford " + product.getName());
-                           // }
+                            } catch (Exception e) {
+                                System.out.println(person.getName() + " can't afford " + product.getName());
+                            }
                         }
                     }
                 }
@@ -53,7 +53,6 @@ public class Main {
                         System.out.println(product.getName());
                     }
                 }
-                System.out.println();
 
             } else {
                 System.out.println(person.getName() + " – Nothing bought");

@@ -32,6 +32,7 @@ public class Person {
 
         System.out.println(this.name + " bought " + product.getName());
         products.add(product);
+        this.money -= product.getCost();
     }
 
     public String getName() {
