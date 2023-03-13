@@ -30,10 +30,16 @@ public class Person {
             throw new IllegalArgumentException(String.format("%s can't afford %s", this.name, product.getName()));
         }
 
+        System.out.println(this.name + " bought " + product.getName());
         products.add(product);
+        this.money -= product.getCost();
     }
 
     public String getName() {
         return  this.name;
+    }
+
+    public List<Product> getProducts() {
+        return products;
     }
 }
