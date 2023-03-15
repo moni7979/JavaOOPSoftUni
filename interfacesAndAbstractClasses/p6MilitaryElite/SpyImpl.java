@@ -23,4 +23,10 @@ public class SpyImpl extends SoldierImpl {
     public String getLastName() {
         return null;
     }
+
+    @Override
+    public String toString() {
+        return  "Name: " + firstName + " " + lastName + "Id: " + id + System.lineSeparator() +
+                "Code Number: " + codeNumber;
+    }
 }

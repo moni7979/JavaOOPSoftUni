@@ -28,4 +28,9 @@ public class PrivateImpl extends SoldierImpl implements Private{
     public String getLastName() {
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "Name: " + firstName + " " + lastName + "Id: " + id + " " + "Salary: " + salary;
+    }
 }

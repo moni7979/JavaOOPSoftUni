@@ -20,4 +20,17 @@ public class EngineerImpl extends SpecialisedSoldierImpl implements Engineer{
     public Set<Repair> getRepairs() {
         throw new IllegalStateException("TODO");
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(String.format("Name: %s %s Id: %d Salary: %.2f", firstName, lastName, id, salary));
+        sb.append(System.lineSeparator());
+        sb.append("Corps: TODO");
+        sb.append(System.lineSeparator());
+        sb.append("Repairs:");
+        sb.append(System.lineSeparator());
+        repairs.stream().forEach(r -> sb.append(r));
+        return String.valueOf(sb);
+    }
 }

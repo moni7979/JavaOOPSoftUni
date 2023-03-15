@@ -1,9 +1,10 @@
 package p6MilitaryElite;
 
-public class Repair {
+public abstract class Repair {
 
     //TODO check what it inherits
 
-    private String partName;
-    private int hoursWorked;
+    protected String getPartName;
+    protected int getHoursWorked;
+
 }
